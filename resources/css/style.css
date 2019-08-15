@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v23/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJh1Zyc61YA.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v8/UqyVK80NJXN4zfRgbdfbo55cV-UyZKA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind Guntur', Helvetica;
+    background: #fff;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.2em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 7px 14px 0px #f3f3f3;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    top: 0;
+}
+
+.navbar a {
+    color: #8f7d76;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'Roboto';
+    padding: 0;
+    margin: 0% 5%;
+}
+
+.navbar a:hover{
+    color: #bbaaa4;
+}
+
+.navcont {
+    width: 500px;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 26px 0px;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.site-title {
+    margin: 14px 0px;
+    left: 0;
+}
+
+.site-title a {
+    font-family: 'Montserrat', 'Roboto';
+    font-size: 2em;
+    color: #5e4b45;
+    padding: 0;
+}
+
+.site-title a:hover {
+    color: #8f7d76;
+}
+
+.main-content {
+    width: 80%;
+    color: #5e4b45;
+    padding: 4%;
+}
+
+.banner-thing {
+    width: 100%;
+    height: auto;
+    background-color: #f3efed;
+    color: #5e4b45;
+    padding: 2em;
+}
+
+.hello {
+    margin: 15% 10% 5% 10%;
+}
+
+.hello p {
+    font-family: 'Comfortaa';
+    font-size: 2.5em;
+    color: #6b5852;
+}
+
+.call-to-action {
+    padding: 0;
+    margin: 1.3em;
+    object-position: center;
+}
+
+.call-to-action a {
+    font-family: 'Comfortaa';
+    border-radius: 20px;
+    background-color: #fff;
+    color: #bbaaa4;
+    border: #bbaaa4 2px solid;
+    text-decoration: none;
+    padding: 0.7em;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background-color 200ms 100ms ease, color 200ms 100ms ease, border 200ms 100ms ease;
+}
+
+.call-to-action a:hover {
+    background-color: #8f7d76;
+    border: #8f7d76 2px solid;
+    color: #fff;
+}
+
+.about {
+    font-family: 'Montserrat', 'Roboto';
+    font-size: 1em;
+    width: 60%;
+    padding: 0;
+    margin: 8% 28%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    min-width: 100%;
+    height: 50px;
+    bottom: 0;
+    box-shadow: 7px 0px 14px 0px #f3f3f3;
+}
+
+.footer p {
+    color: #bbaaa4;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 16px 0px;
+    font-family: 'Comfortaa', Helvetica;
+}
+
+@media only screen and (max-width: 550px), (pixel-density: 2) {
+
+    .navbar {
+        height: 80px;
+        text-align: center;
+    }
+
+    .navcont {
+        display: none;
+    }
+
+    .site-title {
+        font-size: 1.5em;
+        top: 0;
+        text-align: center;
+        padding: 0;
+        margin: 10px 0px;
+    }
+
+}
