@@ -28,7 +28,7 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Hind Guntur', Helvetica;
+    font-family: 'Comfortaa', Helvetica;
     background: #fff;
 }
 
@@ -54,6 +54,7 @@ p {
     height: 70px;
     width: 100%;
     position: fixed;
+    background-color: #fff;
     box-shadow: 0px 7px 14px 0px #f3f3f3;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -94,10 +95,12 @@ p {
     font-size: 2em;
     color: #5e4b45;
     padding: 0;
+    transition: color 200ms 100ms ease, letter-spacing 200ms 100ms ease;
 }
 
 .site-title a:hover {
     color: #8f7d76;
+    letter-spacing: 5px;
 }
 
 .main-content {
@@ -109,9 +112,17 @@ p {
 .banner-thing {
     width: 100%;
     height: auto;
+    padding: 2em 0em;
+    margin-bottom: 3em;
     background-color: #f3efed;
     color: #5e4b45;
-    padding: 2em;
+    text-align: center;
+}
+
+.banner-thing p {
+    font-size: 1.3em;
+    padding: 0;
+    font-family: 'Comfortaa', 'Roboto';
 }
 
 .hello {
@@ -126,7 +137,7 @@ p {
 
 .call-to-action {
     padding: 0;
-    margin: 1.3em;
+    margin: 3.5em 0em 0em 1em;
     object-position: center;
 }
 
@@ -149,6 +160,23 @@ p {
     color: #fff;
 }
 
+.quick-links {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0;
+    margin: 1em;
+}
+
+.quick-links img {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    margin: 0em 2em;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .about {
     font-family: 'Montserrat', 'Roboto';
     font-size: 1em;
@@ -160,7 +188,7 @@ p {
 }
 
 .footer {
-    min-width: 100%;
+    width: 100%;
     height: 50px;
     bottom: 0;
     box-shadow: 7px 0px 14px 0px #f3f3f3;
@@ -174,7 +202,49 @@ p {
     font-family: 'Comfortaa', Helvetica;
 }
 
-@media only screen and (max-width: 550px), (pixel-density: 2) {
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 400ms ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: 400ms ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.button {
+  background-color: #bbaaa4;
+  font-size: 1em;
+  padding: 16px 32px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #6b5852;
+}
+
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .navbar {
         height: 80px;
