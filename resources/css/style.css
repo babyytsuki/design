@@ -59,6 +59,7 @@ p {
     justify-content: space-between;
     flex-wrap: nowrap;
     top: 0;
+    z-index: 99;
 }
 
 .navbar a {
@@ -187,10 +188,97 @@ p {
     align-items: center;
 }
 
+.workscont {
+    margin-top: 8%;
+}
+
+.works {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    margin: 4% 10%;
+}
+
+.works img {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0em 1em;
+}
+
+.project-name {
+    margin: 0;
+    padding: 1.5em;
+    font-size: 1.8em;
+    color: #6b5852;
+}
+
+.project-desc {
+    margin: 0;
+    padding: 4em;
+    font-size: 1em;
+    align-items: center;
+    color: #8f7d76;
+}
+
+.contact {
+    margin: 15% 20%;
+}
+
+.contact h2 {
+    font-size: 4em;
+    color: #6b5852;
+}
+
+.contact p {
+    font-size: 2em;
+    color: #8f7d76;
+}
+
+.contact a {
+    text-decoration: none;
+    padding: 5px 0px;
+    border-bottom: 10px solid #cfc1bc;
+    color: #5e4b45;
+    transition: background-color 150ms 50ms ease, border-bottom 150ms 50ms ease;
+}
+
+.contact a:hover {
+    border-bottom: 0px;
+    background: #cfc1bc;
+}
+
+.back {
+    padding: 0;
+    margin: 1em;
+    left: 0;
+    top: 0;
+}
+
+.back a {
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    padding: 0.8em 1em;
+    background-color: #bbaaa4;
+    color: #5e4b45;
+    transition: color 100ms ease, background-color 100ms ease;
+}
+
+.back a:hover {
+    background-color: #fff;
+    color:#8f7d76;
+}
+
 .footer {
     width: 100%;
     height: 50px;
     bottom: 0;
+    margin-top: 5%;
     box-shadow: 7px 0px 14px 0px #f3f3f3;
 }
 
@@ -244,10 +332,14 @@ p {
     color: #6b5852;
 }
 
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+.dropbtn {
+    display: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
 
     .navbar {
-        height: 80px;
+        height: 300px;
         text-align: center;
     }
 
@@ -256,11 +348,140 @@ p {
     }
 
     .site-title {
-        font-size: 1.5em;
+        font-size: 3em;
         top: 0;
         text-align: center;
         padding: 0;
-        margin: 10px 0px;
+        margin-top: 35px;
     }
+
+    .main-content {
+        margin: 30% 5%;
+    }
+
+    .hello {
+        font-size: 1.5em;
+    }
+
+    .call-to-action {
+        text-align: center;
+        margin-top: 1em;
+        position: absolute;
+    }
+
+    .call-to-action a {
+        font-size: 1.5em;
+    }
+
+    .banner-thing {
+        font-size: 3.2em;
+    }
+
+    .quick-links {
+        display: inline-block;
+    }
+
+    .quick-links img {
+        width: 90%;
+        height: 280px;
+        margin: 0% 5% 7% 5%;
+        justify-content: center;
+    }
+
+    .works {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .works img {
+        object-fit: cover;
+        width: 96%;
+        margin: 0% 2% 5% 2%;
+    }
+
+    .project-name {
+        font-size: 3em;
+        padding: 0;
+        margin: 0% 3%;
+    }
+
+    .project-desc {
+        font-size: 2.2em;
+        padding: 1em;
+        margin: 5%;
+    }   
+
+    .workscont {
+        margin-top: 30%;
+    }
+
+    .button {
+        font-size: 2.5em;
+        padding: 0.8em;
+    }
+
+    .about {
+        margin: 15% 5%;
+        font-size: 2em;
+        width: 90%;
+    }
+
+    .contact {
+        margin-top: 40%;
+        margin-bottom: 30%;
+    }
+
+    .contact p {
+        font-size: 3em;
+    }
+
+    .footer {
+        height: 120px;
+        width: 100%;
+    }
+
+    .footer p {
+        font-size: 2.2em;
+        padding-top: 1em;
+    }
+
+    .dropbtn {
+        padding: 0;
+        margin: 2.5em 7em;
+        color: #5e4b45;
+        font-size: 4em;
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        z-index: 999;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #fff;
+        margin: 30% 9% 0% 9%;
+        width: 800px;
+        text-align: center;
+        z-index: 999;
+      }
+      
+      .dropdown-content a {
+        color: #6b5852;
+        border-bottom: 2px solid #bbaaa4;
+        padding: 0.5em 0em;
+        font-size: 3.5em;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #f3efed;}
+      
+      .show {display: block;}
 
 }
