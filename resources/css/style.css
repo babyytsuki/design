@@ -374,7 +374,8 @@ p {
     }
 
     .banner-thing {
-        font-size: 3.2em;
+        font-size: 1.5em;
+        text-align: center;
     }
 
     .quick-links {
@@ -416,8 +417,11 @@ p {
     }
 
     .button {
-        font-size: 2.5em;
-        padding: 0.8em;
+        text-align: center;
+    }
+
+    .button a {
+        font-size: 2.2em;
     }
 
     .about {
