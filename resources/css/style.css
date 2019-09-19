@@ -390,8 +390,6 @@ h3 {
     text-decoration: none;
     padding: 5px 0px;
     color: #9e8881;
-    transition: 
-    
     background-color 150ms 50ms ease, border-bottom 150ms 50ms ease;
 }
 
@@ -400,7 +398,7 @@ h3 {
     background: #cfc1bc;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 
     .navbar {
         height: 300px;
@@ -515,13 +513,17 @@ h3 {
 
     .dropbtn {
         padding: 0;
-        margin: 2.5em 7em;
+        margin: 16% 40%;
+        width: 20%;
         color: #5e4b45;
         font-size: 4em;
         cursor: pointer;
         display: block;
         position: fixed;
         z-index: 999;
+        background: hsl(0, 0%, 0%, 0%);
+        border-width: 0px;
+
       }
       
       .dropdown {
