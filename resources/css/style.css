@@ -336,6 +336,70 @@ p {
     display: hidden;
 }
 
+.blank {
+    padding: 0;
+    margin: 12%;
+    width: 100%;
+}
+
+.cv {
+    margin: 10%;
+    width: 80%;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+.info {
+    font-size: 0.9em;
+    color: #9e8881;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.cvsect {
+    margin-bottom: 5%;
+}
+
+.idkanymore {
+    margin: 5% 0% 0% 10%;
+    padding: 0;
+    width: 90%;
+}
+
+.idkanymore p {
+    font-size: 1em;
+}
+
+.idkanymore a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #9e8881;
+    transition: background-color 150ms 50ms ease, border-bottom 150ms 50ms ease;
+}
+
+.idkanymore a:hover {
+    border-bottom: 0px;
+    background: #cfc1bc;
+}
+
+.cv a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #9e8881;
+    transition: 
+    
+    background-color 150ms 50ms ease, border-bottom 150ms 50ms ease;
+}
+
+.cv a:hover {
+    border-bottom: 0px;
+    background: #cfc1bc;
+}
+
 @media only screen and (max-width: 1200px) {
 
     .navbar {
