@@ -28,7 +28,7 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Hind Guntur', Helvetica;
+    font-family: 'Comfortaa', Helvetica;
     background: #fff;
 }
 
@@ -54,10 +54,12 @@ p {
     height: 70px;
     width: 100%;
     position: fixed;
+    background-color: #fff;
     box-shadow: 0px 7px 14px 0px #f3f3f3;
     justify-content: space-between;
     flex-wrap: nowrap;
     top: 0;
+    z-index: 99;
 }
 
 .navbar a {
@@ -94,10 +96,12 @@ p {
     font-size: 2em;
     color: #5e4b45;
     padding: 0;
+    transition: color 200ms 100ms ease, letter-spacing 200ms 100ms ease;
 }
 
 .site-title a:hover {
     color: #8f7d76;
+    letter-spacing: 5px;
 }
 
 .main-content {
@@ -109,9 +113,17 @@ p {
 .banner-thing {
     width: 100%;
     height: auto;
+    padding: 2em 0em;
+    margin-bottom: 3em;
     background-color: #f3efed;
     color: #5e4b45;
-    padding: 2em;
+    text-align: center;
+}
+
+.banner-thing p {
+    font-size: 1.3em;
+    padding: 0;
+    font-family: 'Comfortaa', 'Roboto';
 }
 
 .hello {
@@ -126,7 +138,7 @@ p {
 
 .call-to-action {
     padding: 0;
-    margin: 1.3em;
+    margin: 3.5em 0em 0em 1em;
     object-position: center;
 }
 
@@ -149,6 +161,23 @@ p {
     color: #fff;
 }
 
+.quick-links {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0;
+    margin: 1em;
+}
+
+.quick-links img {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    margin: 0em 2em;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .about {
     font-family: 'Montserrat', 'Roboto';
     font-size: 1em;
@@ -159,10 +188,97 @@ p {
     align-items: center;
 }
 
+.workscont {
+    margin-top: 8%;
+}
+
+.works {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    margin: 4% 10%;
+}
+
+.works img {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0em 1em;
+}
+
+.project-name {
+    margin: 0;
+    padding: 1.5em;
+    font-size: 1.8em;
+    color: #6b5852;
+}
+
+.project-desc {
+    margin: 0;
+    padding: 4em;
+    font-size: 1em;
+    align-items: center;
+    color: #8f7d76;
+}
+
+.contact {
+    margin: 15% 20%;
+}
+
+.contact h2 {
+    font-size: 4em;
+    color: #6b5852;
+}
+
+.contact p {
+    font-size: 2em;
+    color: #8f7d76;
+}
+
+.contact a {
+    text-decoration: none;
+    padding: 5px 0px;
+    border-bottom: 10px solid #cfc1bc;
+    color: #5e4b45;
+    transition: background-color 150ms 50ms ease, border-bottom 150ms 50ms ease;
+}
+
+.contact a:hover {
+    border-bottom: 0px;
+    background: #cfc1bc;
+}
+
+.back {
+    padding: 0;
+    margin: 1em;
+    left: 0;
+    top: 0;
+}
+
+.back a {
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    padding: 0.8em 1em;
+    background-color: #bbaaa4;
+    color: #5e4b45;
+    transition: color 100ms ease, background-color 100ms ease;
+}
+
+.back a:hover {
+    background-color: #fff;
+    color:#8f7d76;
+}
+
 .footer {
-    min-width: 100%;
+    width: 100%;
     height: 50px;
     bottom: 0;
+    margin-top: 5%;
     box-shadow: 7px 0px 14px 0px #f3f3f3;
 }
 
@@ -174,10 +290,118 @@ p {
     font-family: 'Comfortaa', Helvetica;
 }
 
-@media only screen and (max-width: 550px), (pixel-density: 2) {
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 400ms ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: 400ms ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.button {
+  background-color: #bbaaa4;
+  font-size: 1em;
+  padding: 16px 32px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #6b5852;
+}
+
+.dropbtn {
+    display: hidden;
+}
+
+.blank {
+    padding: 0;
+    margin: 12%;
+    width: 100%;
+}
+
+.cv {
+    margin: 10%;
+    width: 80%;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+.info {
+    font-size: 0.9em;
+    color: #9e8881;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.cvsect {
+    margin-bottom: 5%;
+}
+
+.idkanymore {
+    margin: 5% 0% 0% 10%;
+    padding: 0;
+    width: 90%;
+}
+
+.idkanymore p {
+    font-size: 1em;
+}
+
+.idkanymore a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #9e8881;
+    transition: background-color 150ms 50ms ease, border-bottom 150ms 50ms ease;
+}
+
+.idkanymore a:hover {
+    border-bottom: 0px;
+    background: #cfc1bc;
+}
+
+.cv a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #9e8881;
+    background-color: 150ms 50ms ease, border-bottom 150ms 50ms ease;
+}
+
+.cv a:hover {
+    border-bottom: 0px;
+    background: #cfc1bc;
+}
+
+@media only screen and (max-width: 1000px) {
 
     .navbar {
-        height: 80px;
+        height: 300px;
         text-align: center;
     }
 
@@ -186,11 +410,148 @@ p {
     }
 
     .site-title {
-        font-size: 1.5em;
+        font-size: 3em;
         top: 0;
         text-align: center;
         padding: 0;
-        margin: 10px 0px;
+        margin-top: 35px;
     }
+
+    .main-content {
+        margin: 30% 5%;
+    }
+
+    .hello {
+        font-size: 1.5em;
+    }
+
+    .call-to-action {
+        text-align: center;
+        margin-top: 1em;
+        position: absolute;
+    }
+
+    .call-to-action a {
+        font-size: 1.5em;
+    }
+
+    .banner-thing {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .quick-links {
+        display: inline-block;
+    }
+
+    .quick-links img {
+        width: 90%;
+        height: 280px;
+        margin: 0% 5% 7% 5%;
+        justify-content: center;
+    }
+
+    .works {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .works img {
+        object-fit: cover;
+        width: 96%;
+        margin: 0% 2% 5% 2%;
+    }
+
+    .project-name {
+        font-size: 3em;
+        padding: 0;
+        margin: 0% 3%;
+    }
+
+    .project-desc {
+        font-size: 2.2em;
+        padding: 1em;
+        margin: 5%;
+    }   
+
+    .workscont {
+        margin-top: 30%;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button a {
+        font-size: 2.2em;
+    }
+
+    .about {
+        margin: 15% 5%;
+        font-size: 2em;
+        width: 90%;
+    }
+
+    .contact {
+        margin-top: 40%;
+        margin-bottom: 30%;
+    }
+
+    .contact p {
+        font-size: 3em;
+    }
+
+    .footer {
+        height: 120px;
+        width: 100%;
+    }
+
+    .footer p {
+        font-size: 2.2em;
+        padding-top: 1em;
+    }
+
+    .dropbtn {
+        padding: 0;
+        margin: 16% 40%;
+        width: 20%;
+        color: #5e4b45;
+        font-size: 4em;
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        z-index: 999;
+        background: hsl(0, 0%, 0%, 0%);
+        border-width: 0px;
+
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #fff;
+        margin: 30% 9% 0% 9%;
+        width: 800px;
+        text-align: center;
+        z-index: 999;
+      }
+      
+      .dropdown-content a {
+        color: #6b5852;
+        border-bottom: 2px solid #bbaaa4;
+        padding: 0.5em 0em;
+        font-size: 3.5em;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #f3efed;}
+      
+      .show {display: block;}
 
 }
