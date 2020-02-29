@@ -200,12 +200,19 @@ p {
     color: #876C61;
 }
 
+.call-to-action-2 {
+    padding: 0;
+    margin: 3.5em 0em 0em 0em;
+    object-position: center;
+}
+
 .call-to-action {
     padding: 0;
     margin: 3.5em 0em 0em 0em;
     object-position: center;
 }
 
+a.call-to-action-2, .call-to-action-2 a,
 a.call-to-action, .call-to-action a {
     font-weight: 400;
     font-family: 'Montserrat';
@@ -224,6 +231,7 @@ a.call-to-action, .call-to-action a {
     transition: background-color 200ms 100ms ease, color 200ms 100ms ease, border 200ms 100ms ease;
 }
 
+a.call-to-action-2:hover, .call-to-action-2 a:hover,
 a.call-to-action:hover, .call-to-action a:hover {
     background-color: #E4DBD5;
     border: #E4DBD5 2px solid;
@@ -432,6 +440,10 @@ a.call-to-action:hover, .call-to-action a:hover {
     margin: 13% 35% 0% 45%;
 }
 
+.cv ul {
+    font-weight: 300;
+}
+
 .cv a {
     text-decoration: none;
     padding: 5px 0px;
@@ -448,11 +460,19 @@ a.call-to-action:hover, .call-to-action a:hover {
     margin-bottom: 5%;
 }
 
-@media only screen and (max-device-width: 1000px) {
+.centre {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)!important;
+}
+
+@media only screen and (max-device-width: 767px) {
 
     .navbar {
         height: 300px;
+        width: 100%;
         text-align: center;
+        right: initial;
     }
 
     .navcont {
@@ -460,34 +480,42 @@ a.call-to-action:hover, .call-to-action a:hover {
     }
 
     .site-title {
-        font-size: 3em;
+        font-size: 2em;
         top: 0;
         text-align: center;
         padding: 0;
-        margin-top: 35px;
+        margin-top: 80px;
     }
 
     .main-content {
-        margin: 30% 5%;
+        margin: 0;
     }
 
     .hello {
         font-size: 1.5em;
+        margin: 50% 15% 60% 15%;
     }
 
-    .call-to-action {
-        text-align: center;
-        margin-top: 1em;
+    .spacer {
+        padding: 1% 0;
+    }
+
+    a.call-to-action-2 {
+        font-size: 1.4em!important;
+        padding: 30px 50px;
+        border-radius: 50px;
+        left: 50%;
+        transform: (-50%,-50%);
         position: absolute;
     }
 
-    .call-to-action a {
-        font-size: 1.5em;
+    a.call-to-action {
+        font-size: 0.8em;
+        padding: 25px 50px;
     }
 
-    .banner-thing {
-        font-size: 1.5em;
-        text-align: center;
+    .call-to-action {
+        border-radius: 50px!important;
     }
 
     .quick-links {
@@ -501,15 +529,23 @@ a.call-to-action:hover, .call-to-action a:hover {
         justify-content: center;
     }
 
-    .works {
-        display: inline-block;
-        text-align: center;
+    .works,
+    .works-alt {
+        display: inline;
+        font-size: 0.8em;
+        background-color: initial;
     }
 
-    .works img {
+    .works p,
+    .works-alt p {
+        font-size: 0.8em;
+    }
+
+    .works img,
+    .works-alt img {
         object-fit: cover;
-        width: 96%;
-        margin: 0% 2% 5% 2%;
+        margin: 0% 8% 5% 8%;
+        width: 84%;
     }
 
     .project-name {
@@ -520,12 +556,16 @@ a.call-to-action:hover, .call-to-action a:hover {
 
     .project-desc {
         font-size: 2.2em;
-        padding: 1em;
-        margin: 5%;
+        padding: 0;
+        margin: 5% 8% 10% 8%;
     }   
 
+    .project-desc p {
+        margin-bottom: 6%;
+    }
+
     .workscont {
-        margin-top: 30%;
+        padding-top: 320px;
     }
 
     .button {
@@ -537,18 +577,52 @@ a.call-to-action:hover, .call-to-action a:hover {
     }
 
     .about {
-        margin: 15% 5%;
-        font-size: 2em;
-        width: 90%;
+        font-size: 0.8em;
+        margin: 35% 0% 0% 0%;
+        padding: 0 6%;
+    }
+
+    .portfolio-title,
+    .title {
+        font-size: 1.5em;
     }
 
     .contact {
-        margin-top: 40%;
+        margin-top: 400px;
         margin-bottom: 30%;
+        text-align: center;
     }
 
     .contact p {
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    .contact h2 {
+        font-size: 4em;
+    }
+
+    .main-content {
+        margin-top: 340px;
+    }
+
+    .idkanymore {
+        margin: 15% 30%;
+    }
+
+    .cv {
+        margin: 0% 8%;
+    }
+
+    .cv ul {
+        font-weight: 300;
+    }
+
+    .cvsect {
+        margin-bottom: 7%;
+    }
+
+    .project-desc .title {
+        font-weight: 400;
     }
 
     .footer {
@@ -559,6 +633,52 @@ a.call-to-action:hover, .call-to-action a:hover {
     .footer p {
         font-size: 2.2em;
         padding-top: 1em;
+    }
+
+    #hideshow {
+        font-size: 4.4em;
+        position: fixed;
+        top: 171px;
+        left: 46%;
+        text-decoration: none;
+        color: #6b5852;
+        z-index: 999999999;
+    }
+    
+    #menu {
+        background-color: #fff;
+        opacity: 0.9;
+        display: none;
+        position: absolute;
+        width: 100%;
+        font-family: 'Montserrat', 'Times New Roman';
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 99999999;
+        top: 300px;
+    }
+
+    #menu a {
+        color: #6b5852;
+        font-size: 4em;
+        padding: 70px 100px;
+        text-decoration: none;
+        line-height: 150px;
+    }
+
+    .centre {
+        position: relative;
+        left: initial;
+        transform: initial;
+    }
+
+}
+
+@media only screen and (min-device-width: 1024px) {
+
+    #menu, 
+    #hideshow {
+        display: none;
     }
 
 }
