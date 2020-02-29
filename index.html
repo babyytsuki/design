@@ -14,29 +14,38 @@
                 <a href="./index.html">DOROTHEA CHAI</a>
             </div>
             <div class="navcont">
-                <a href="./about.html">about</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./cv.html">cv</a>
-                <a href="./contact.html">contact</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./portfolio.html">PORTFOLIO</a>
+                <a href="./cv.html">CV</a>
+                <a href="./contact.html">CONTACT</a>
             </div>
+        </div>
+
+        <a href="#" id="hideshow">☰</a>
+
+        <div id="menu">
+            <a href="./about.html">ABOUT</a><br>
+            <a href="./portfolio.html">PORTFOLIO</a><br>
+            <a href="./cv.html">CV</a><br>
+            <a href="./contact.html">CONTACT</a>
         </div>
 
         <div class="main-content">
             <div class="hello">
                 <p style="display: inline">Hi, I'm Dorothea! </p>
-                <p style="display: inline">I'm <span id="typed"></span>.</p>
+                <p style="display: inline">I'm a <span id="typed"></span>.</p>
                 <div class="call-to-action">
-                        <a href="./projects.html">View my portfolio</a>
+                        <a href="./portfolio.html">View my portfolio</a>
                     </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>© Dorothea Chai 2020</p>
+            <p>© DOROTHEA CHAI 2020</p>
         </div>
     <script>
     var typed = new Typed('#typed', {
-    strings: ["a UI/UX Designer", "a web designer"],
+    strings: ["UI/UX Designer", "web designer"],
     typeSpeed: 60,
     backDelay: 1000,
     backSpeed: 50,
@@ -48,5 +57,14 @@
             duration: 1000
         });
     </script>
+
+    <script>
+    jQuery(document).ready(function(){
+    jQuery('#hideshow').on('click', function(event) {        
+        jQuery('#menu').toggle();
+    });
+});
+    </script>
+
     </body>
 </html>

@@ -20,6 +20,15 @@
             </div>
         </div>
 
+        <a href="#" id="hideshow">☰</a>
+
+        <div id="menu">
+            <a href="./about.html">ABOUT</a><br>
+            <a href="./portfolio.html">PORTFOLIO</a><br>
+            <a href="./cv.html">CV</a><br>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+
         <div class="main-content" data-aos="fade-up" data-aos-delay="150">
             <div class="about">
               <p class="title">ABOUT ME</p>
@@ -28,16 +37,24 @@
                 <p>I do not have any background in Computer Science; I graduated with a Diploma in Animation from LASALLE College of the Arts, Singapore. Most of what I know now are self-taught while the rest are knowledge acquired on-the-job.</p>
               
               </div>
-              <a data-aos="fade-up" data-aos-delay="250" style="position: absolute;left: 50%;transform: translate(-50%, -50%);" class="call-to-action" href="./cv.html">View my CV</a>
+              <a data-aos="fade-up" data-aos-delay="250" class="call-to-action-2 centre" href="./cv.html">View my CV</a>
         </div>
         <div class="spacer"> </div>
 
         <div class="footer">
-            <p>© Dorothea Chai 2020</p>
+            <p>© DOROTHEA CHAI 2020</p>
         </div>
 
     <script>
       AOS.init();
     </script>
+
+<script>
+  jQuery(document).ready(function(){
+  jQuery('#hideshow').on('click', function(event) {        
+      jQuery('#menu').toggle();
+  });
+});
+  </script>
     </body>
 </html>

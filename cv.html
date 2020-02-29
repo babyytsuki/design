@@ -20,6 +20,15 @@
             </div>
         </div>
 
+        <a href="#" id="hideshow">☰</a>
+
+        <div id="menu">
+            <a href="./about.html">ABOUT</a><br>
+            <a href="./portfolio.html">PORTFOLIO</a><br>
+            <a href="./cv.html">CV</a><br>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+
         <!-- add stuff here -->
 
         <div class="main-content">
@@ -130,10 +139,18 @@
       </div>
 
         <div class="footer">
-            <p>© Doris Chai 2019</p>
+            <p>© DOROTHEA CHAI 2020</p>
         </div>
     <script>
       AOS.init();
     </script>
+
+<script>
+  jQuery(document).ready(function(){
+  jQuery('#hideshow').on('click', function(event) {        
+      jQuery('#menu').toggle();
+  });
+});
+  </script>
     </body>
 </html>
