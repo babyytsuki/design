@@ -7,61 +7,34 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
-        <title>Doris Chai :: About</title>
+        <title>DOROTHEA CHAI :: About</title>
         <div class="navbar">
             <div class="site-title">
-                <a href="./index.html">DORIS CHAI</a>
+                <a href="./index.html">DOROTHEA CHAI</a>
             </div>
             <div class="navcont">
                 <a href="./about.html">about</a>
-                <a href="./projects.html">projects</a>
+                <a href="./portfolio.html">Portfolio</a>
                 <a href="./cv.html">cv</a>
                 <a href="./contact.html">contact</a>
             </div>
         </div>
 
-        <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">☰</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="./about.html">About</a>
-                  <a href="./projects.html">Projects</a>
-                  <a href="./cv.html">CV</a>
-                  <a href="./contact.html">Contact</a>
-                </div>
-              </div>
-
-        <!-- add stuff here -->
-
         <div class="main-content" data-aos="fade-up" data-aos-delay="150">
             <div class="about">
-                <p>I am Doris, and I am a web designer based in Singapore. I graduated from LASALLE College of the Arts with a Diploma in Animation. Not only do I design websites; I also understand code and work with HTML/CSS to build my websites. I am open to new experiences and opportunities, and am not afraid to venture out of my design-centric comfort zone.</p>
-            </div>
+              <p class="title">ABOUT ME</p>
+                <p>I am Dorothea Chai, an interface designer and front-end developer based in Singapore. I am also a learning web developer, trying to branch out and explore even deeper within this industry. </p>
+
+                <p>I do not have any background in Computer Science; I graduated with a Diploma in Animation from LASALLE College of the Arts, Singapore. Most of what I know now are self-taught while the rest are knowledge acquired on-the-job.</p>
+              
+              </div>
+              <a data-aos="fade-up" data-aos-delay="250" style="position: absolute;left: 50%;transform: translate(-50%, -50%);" class="call-to-action" href="./cv.html">View my CV</a>
         </div>
+        <div class="spacer"> </div>
 
         <div class="footer">
-            <p>© Doris Chai 2019</p>
+            <p>© Dorothea Chai 2020</p>
         </div>
-        <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(event) {
-                  if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                      }
-                    }
-                  }
-                }
-                </script>
 
     <script>
       AOS.init();
